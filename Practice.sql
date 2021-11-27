@@ -18,28 +18,28 @@ PRIMARY KEY (id)
 ;
 
 INSERT INTO cars.cars_info (mark, model, engine, price, speed)
-VALUES ("BMW", "325", 2.5, 15000, 230);
+VALUES ('BMW', '325', 2.5, 15000, 230);
 
 INSERT INTO cars.cars_info (mark, model, engine, price, speed)
-VALUES ("BMW", "X5", 3.5, 55000, 290);
+VALUES ('BMW', 'X5', 3.5, 55000, 290);
 
 INSERT INTO cars.cars_info (mark, model, engine, price, speed)
-VALUES ("OPEL", "ASTRA", 1.4, 5000, 180);
+VALUES ('OPEL', 'ASTRA', 1.4, 5000, 180);
 
 INSERT INTO cars.cars_info (mark, model, engine, price, speed)
-VALUES ("OPEL", "ASTRA", 1.6, 5300, 200);
+VALUES ('OPEL', 'ASTRA', 1.6, 5300, 200);
 
 INSERT INTO cars.cars_info (mark, model, engine, price, speed)
-VALUES ("AUDI", "A6", 3.0, 25000, 250);
+VALUES ('AUDI', 'A6', 3.0, 25000, 250);
 
 INSERT INTO cars.cars_info (mark, model, engine, price, speed)
-VALUES ("MERCEDES", "BENZ", 3.5, 45000, 280);
+VALUES ('MERCEDES', 'BENZ', 3.5, 45000, 280);
 
 INSERT INTO cars.cars_info (mark, model, engine, price, speed)
-VALUES ("MERCEDES", "GL350", 4.0, 75000, 320);
+VALUES ('MERCEDES', 'GL350', 4.0, 75000, 320);
 
 INSERT INTO cars.cars_info (mark, model, engine, price, speed)
-VALUES ("CHEVROLET", "AVEO", 1.5, 4500, 170);
+VALUES ('CHEVROLET', 'AVEO', 1.5, 4500, 170);
 
 -- 1) вывести все машины
 SELECT * FROM cars_info;
@@ -59,7 +59,7 @@ SELECT * FROM cars_info WHERE speed BETWEEN 200 AND 300;
 -- 6) вывести все машины марка которых Audi и обьем двигателя больше 1.5 л
 SELECT * FROM cars_info WHERE mark = 'AUDI' AND engine > 1.5;
 
--- 7) вывести все машины марка которых начинается на "h"
+-- 7) вывести все машины марка которых начинается на 'h'
 SELECT * FROM cars_info WHERE mark LIKE 'h%';
 
 -- 8) вывести все машины цена которых 200_000, 255_000 или 300_000
